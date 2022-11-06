@@ -1,9 +1,11 @@
 import ReactDOM from "react-dom/client";
+//import Parent from "./props/Parent";
 
+import GuestList from "./state/GuestList";
 const App = () => {
     return (
     <h1>
-        Hi there
+        <GuestList/>
     </h1>
     )
 }
