@@ -10,7 +10,7 @@ const UserSearch:React.FC = () => {
 
     const inputRef = useRef<HTMLInputElement | null>(null)
     const [name, setName] = useState('');
-    const [user, setUser] = useState<{name:string, age:number | undefined}>()
+    const [user, setUser] = useState<{name:string, age:number}>()
 
     useEffect(() => {
         if(!inputRef.current){
@@ -25,9 +25,9 @@ const UserSearch:React.FC = () => {
         });
 
         setUser(found);
-
-        if(user){
-            console.log(user)
+        console.log(user)
+        if(found){
+            console.log(found)
         } else {
             console.log('are u nuts??', null)
         }
