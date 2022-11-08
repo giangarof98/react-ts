@@ -1,12 +1,13 @@
 import ReactDOM from "react-dom/client";
 //import Parent from "./props/Parent";
 //import UserSearch from "./state/UserSearch";
-import EvtComponent from "./events/EvtComponent";
+//import EvtComponent from "./events/EvtComponent";
 //import GuestList from "./state/GuestList";
+import UserSearch from "./refs/UserSearch";
 const App = () => {
     return (
     <h1>
-        <EvtComponent/>
+        <UserSearch/>
     </h1>
     )
 }
